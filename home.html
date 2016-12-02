@@ -1,0 +1,55 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+function AddRow()
+{
+	
+	var n=document.getElementById('na');
+	var a=document.getElementById('ag');
+	var re=document.getElementById('reg');
+    $('#myTable').append('<tr><td>'+n.value+'</td><td>'+a.value+'</td><td>'+re.value+'</td></tr>')
+}
+</script>
+<title></title>
+</head>
+<body>
+
+
+<table class="table table-bordered"id="myTable">
+      <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Reg No</th>
+      </tr>
+      <tr>
+      <td>Aravind</td>
+      <td>21</td>
+      <td>13BCE0817</td>
+      </tr>
+      <tr>
+      <td>Lanaya</td>
+      <td>23</td>
+      <td>13BME0845</td>
+      </tr>
+      <tr>
+      <td>Motred</td>
+      <td>20</td>
+      <td>14BME0645</td>
+      </tr>
+</table><div class="text-center "style="padding:15px;">
+<div class="text-center" style="padding:30px; border:2px solid red;border-radius: 15px;">
+
+	Name:<br><input type="text" id="na"></input><br>
+	Age:<br><input type="text" id="ag"></input><br>
+	Reg:<br><input type="text" id="reg"></input><br><br>
+
+<button id="btnAdd" onclick="AddRow()" style="width:35%;">Add</button>
+</div>
+
+</div>
+</body>
+</html>
